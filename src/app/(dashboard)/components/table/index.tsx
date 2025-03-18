@@ -4,9 +4,11 @@ import { Container } from "@/components/commons/container";
 import { useSuppliers } from "@/hooks/use-suppliers";
 import { useSupplierStore } from "@/stores/use-supplier-store";
 import {
+	CloudAlert,
 	Download,
 	Edit,
 	Eye,
+	Filter,
 	Search,
 	SearchX,
 	Trash,
@@ -74,7 +76,12 @@ const SupplierList = () => {
 	return (
 		<S.SupplierArea>
 			<Container>
-				{isError && <p>Erro ao carregar fornecedores</p>}
+				{isError && (
+					<S.StatusText className="error">
+						<CloudAlert size={18} color="red" /> Erro ao carregar
+						fornecedores
+					</S.StatusText>
+				)}
 				<S.TableHeader>
 					<S.TableHeaderFilters>
 						<S.TableHeaderSearchForm
@@ -84,7 +91,7 @@ const SupplierList = () => {
 							<S.TableHeaderSearchInput
 								type="text"
 								id="input-search-list-suppliers"
-								placeholder="Pesquisar fornecedor"
+								placeholder="Pesquisar nome fornecedor"
 								value={searchInput}
 								onChange={(e) => setSearchInput(e.target.value)}
 							/>
@@ -98,6 +105,19 @@ const SupplierList = () => {
 						</S.TableHeaderSearchForm>
 
 						<S.Row>
+							<Tooltip>
+								<TooltipTrigger asChild>
+									<Button
+										variant="outline"
+										onClick={exportToCsv}
+										disabled={true}
+									>
+										<Filter size={20} />
+										Filtrar
+									</Button>
+								</TooltipTrigger>
+								<TooltipContent>Em breve</TooltipContent>
+							</Tooltip>
 							<Tooltip>
 								<TooltipTrigger asChild>
 									<Button
@@ -196,6 +216,7 @@ const SupplierList = () => {
 												</Dialog.Trigger>
 												<Dialog.Overlay />
 												<Dialog.Content>
+													<Dialog.Close />
 													<Dialog.Title>
 														Visualizar fornecedor
 													</Dialog.Title>
@@ -222,6 +243,8 @@ const SupplierList = () => {
 												</Dialog.Trigger>
 												<Dialog.Overlay />
 												<Dialog.Content>
+													<Dialog.Close />
+
 													<Dialog.Title>
 														Editar Fornecedor
 													</Dialog.Title>
@@ -267,9 +290,9 @@ const SupplierList = () => {
 						) : (
 							<tr>
 								<td colSpan={5}>
-									<S.EmptyText>
+									<S.StatusText>
 										Nenhum fornecedor encontrado
-									</S.EmptyText>
+									</S.StatusText>
 									<Button
 										variant="outline"
 										onClick={handleClearSearch}
@@ -282,7 +305,7 @@ const SupplierList = () => {
 						)}
 					</tbody>
 				</S.Table>
-				{filteredSuppliers?.length !== 0 && (
+				{filteredSuppliers && filteredSuppliers?.length > 10 && (
 					<Pagination
 						currentPage={currentPage}
 						totalPages={totalPages}

@@ -6,6 +6,10 @@ import styled from "styled-components";
 export const SupplierDash = styled.section`
 	padding: 12rem 0 6rem 0;
 	background: #f9fbfc;
+
+	@media (max-width: 768px) {
+		padding: 12rem 0 3.2rem 0;
+	}
 `;
 
 export const SupplierDashWrap = styled.div`

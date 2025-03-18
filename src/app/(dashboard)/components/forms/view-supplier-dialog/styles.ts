@@ -55,6 +55,16 @@ export const FormSubtitle = styled.span`
 
 export const Row = styled.div`
 	${flex("row", "flex-end", "space-between", "1.6rem")}
+
+	@media(max-width: 768px) {
+		flex-direction: column;
+		a {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 `;
 
 export const Grid = styled.div`
@@ -71,6 +81,10 @@ export const Grid = styled.div`
 
 	.span-4 {
 		grid-column: span 4;
+	}
+
+	@media (max-width: 768px) {
+		grid-template-columns: repeat(1, 1fr);
 	}
 `;
 

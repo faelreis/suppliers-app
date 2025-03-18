@@ -6,4 +6,8 @@ export const IframeGoogleMaps = styled.iframe`
 	border: 1px solid ${variables.colors.gray[1]};
 	height: 24rem;
 	margin: 0 0 3.2rem 0;
+
+	@media (max-width: 768px) {
+		height: 32rem;
+	}
 `;

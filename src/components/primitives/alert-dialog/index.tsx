@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useState } from "react";
+import { forwardRef } from "react";
 import {
 	AlertDialogPortal,
 	AlertDialog as AlertDialogPrimitive,
@@ -8,100 +8,84 @@ import {
 } from "@radix-ui/react-alert-dialog";
 import * as S from "./styles";
 
-interface AlertDialogContextProps {
-	open: boolean;
-	setOpen: (open: boolean) => void;
-}
-
-const AlertDialogContext = createContext<AlertDialogContextProps | undefined>(
-	undefined
-);
-
 export const AlertDialog = ({
 	children,
-	open: controlledOpen,
+	open,
 	onOpenChange,
 }: {
 	children: React.ReactNode;
 	open?: boolean;
 	onOpenChange?: (open: boolean) => void;
 }) => {
-	const [internalOpen, setInternalOpen] = useState(false);
-	const isControlled = controlledOpen !== undefined;
-	const open = isControlled ? controlledOpen : internalOpen;
-
-	const setOpen = (newState: boolean) => {
-		if (isControlled) {
-			onOpenChange?.(newState);
-		} else {
-			setInternalOpen(newState);
-		}
-	};
-
 	return (
-		<AlertDialogContext.Provider value={{ open, setOpen }}>
-			<AlertDialogPrimitive open={open} onOpenChange={setOpen}>
-				{children}
-			</AlertDialogPrimitive>
-		</AlertDialogContext.Provider>
+		<AlertDialogPrimitive open={open} onOpenChange={onOpenChange}>
+			{children}
+		</AlertDialogPrimitive>
 	);
 };
 
-AlertDialog.Trigger = function Trigger({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
-	return <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>;
-};
-
-AlertDialog.Overlay = function Overlay() {
-	return <S.StyledOverlay />;
-};
-
-AlertDialog.Content = function Content({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+AlertDialog.Trigger = forwardRef<
+	HTMLButtonElement,
+	{ children: React.ReactNode }
+>(function Trigger({ children }, ref) {
 	return (
-		<AlertDialogPortal>
-			<AlertDialog.Overlay />
-			<S.StyledContent>{children}</S.StyledContent>
-		</AlertDialogPortal>
+		<AlertDialogTrigger asChild ref={ref}>
+			{children}
+		</AlertDialogTrigger>
 	);
-};
+});
 
-AlertDialog.Title = function Title({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
-	return <S.StyledTitle>{children}</S.StyledTitle>;
-};
+AlertDialog.Overlay = forwardRef<HTMLDivElement>(function Overlay(props, ref) {
+	return <S.StyledOverlay ref={ref} {...props} />;
+});
 
-AlertDialog.Description = function Description({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
-	return <S.StyledDescription>{children}</S.StyledDescription>;
-};
+AlertDialog.Content = forwardRef<HTMLDivElement, { children: React.ReactNode }>(
+	function Content({ children }, ref) {
+		return (
+			<AlertDialogPortal>
+				<AlertDialog.Overlay />
+				<S.StyledContent ref={ref}>{children}</S.StyledContent>
+			</AlertDialogPortal>
+		);
+	}
+);
 
-AlertDialog.Cancel = function Cancel({
-	children,
-	...props
-}: {
-	children: React.ReactNode;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>) {
-	return <S.StyledCancel {...props}>{children}</S.StyledCancel>;
-};
+AlertDialog.Title = forwardRef<
+	HTMLHeadingElement,
+	{ children: React.ReactNode }
+>(function Title({ children }, ref) {
+	return <S.StyledTitle ref={ref}>{children}</S.StyledTitle>;
+});
 
-AlertDialog.Action = function Action({
-	children,
-	...props
-}: {
-	children: React.ReactNode;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>) {
-	return <S.StyledAction {...props}>{children}</S.StyledAction>;
-};
+AlertDialog.Description = forwardRef<
+	HTMLParagraphElement,
+	{ children: React.ReactNode }
+>(function Description({ children }, ref) {
+	return <S.StyledDescription ref={ref}>{children}</S.StyledDescription>;
+});
+
+AlertDialog.Cancel = forwardRef<
+	HTMLButtonElement,
+	{
+		children: React.ReactNode;
+	} & React.ButtonHTMLAttributes<HTMLButtonElement>
+>(function Cancel({ children, ...props }, ref) {
+	return (
+		<S.StyledCancel ref={ref} {...props}>
+			{children}
+		</S.StyledCancel>
+	);
+});
+
+AlertDialog.Action = forwardRef<
+	HTMLButtonElement,
+	{
+		children: React.ReactNode;
+	} & React.ButtonHTMLAttributes<HTMLButtonElement>
+>(function Action({ children, ...props }, ref) {
+	return (
+		<S.StyledAction ref={ref} {...props}>
+			{children}
+		</S.StyledAction>
+	);
+});

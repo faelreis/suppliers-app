@@ -41,8 +41,9 @@ export const TableHeader = styled.div`
 
 export const TableHeaderFilters = styled.div`
 	${flex("row", "center", "flex-start", "1.8rem")}
+	width: 100%;
 
-	@media (max-width: 768px) {
+	@media (max-width: 600px) {
 		${flex("column", "flex-start", "space-between", "1.6rem")}
 	}
 `;
@@ -56,17 +57,16 @@ export const TableHeaderSearchForm = styled.form`
 `;
 
 export const TableHeaderSearchInput = styled.input`
-	width: 100%;
-	max-width: 30rem;
+	width: 32rem;
 	border-radius: 0.5rem;
 	border: 1px solid ${variables.colors.gray[2]};
 	padding: 0.8rem;
 	color: ${variables.colors.black};
 	${Text16Regular}
 
-	@media(max-width: 768px) {
+	@media(max-width: 991px) {
 		${flex("column", "flex-start", "space-between", "1.6rem")}
-		max-width: 100%;
+		width: 100%;
 	}
 `;
 
@@ -145,9 +145,14 @@ export const Actions = styled.div`
 	gap: 0.5rem;
 `;
 
-export const EmptyText = styled.span`
+export const StatusText = styled.span`
 	display: block;
 	margin-bottom: 1.6rem;
+	${flex("row", "center", "flex-start", "1.6rem")}
+
+	&.error {
+		color: red;
+	}
 `;
 
 export const Row = styled.div`
