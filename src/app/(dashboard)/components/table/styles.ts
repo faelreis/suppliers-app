@@ -4,7 +4,7 @@ import variables from "@/styles/variables";
 import styled from "styled-components";
 
 export const SupplierArea = styled.section`
-	padding: 2.4rem 0;
+	padding: 3.2rem 0 6rem 0;
 `;
 
 export const SearchWrapper = styled.div`
@@ -42,7 +42,7 @@ export const TableHeader = styled.div`
 export const TableHeaderFilters = styled.div`
 	${flex("row", "center", "flex-start", "1.8rem")}
 
-	@media(max-width: 768px) {
+	@media (max-width: 768px) {
 		${flex("column", "flex-start", "space-between", "1.6rem")}
 	}
 `;
@@ -50,7 +50,7 @@ export const TableHeaderFilters = styled.div`
 export const TableHeaderSearchForm = styled.form`
 	${flex("row", "center", "flex-start", "0.8rem")}
 
-	@media(max-width: 768px) {
+	@media (max-width: 768px) {
 		width: 100%;
 	}
 `;

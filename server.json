@@ -1,354 +1,814 @@
 {
-  "suppliers": [
-    {
-      "id": "550e8400-e29b-41d4-a716-446655440003",
-      "name": "Tintas & Cores",
-      "description": "Fornecedor de tintas para construção civil e industrial.",
-      "contacts": [
-        {
-          "name": "Juliana Santos",
-          "phone": "(41) 92345-6789"
-        },
-        {
-          "name": "Carlos Mendes",
-          "phone": "(41) 98765-4321"
-        },
-        {
-          "name": "João Silva",
-          "phone": "(11) 91234-5678"
-        },
-        {
-          "name": "Maria Oliveira",
-          "phone": "(11) 92345-6789"
-        },
-        {
-          "name": "Pedro Souza",
-          "phone": "(11) 93456-7890"
-        }
-      ],
-      "address": {
-        "zipCode": "80010-010",
-        "state": "PR",
-        "city": "Curitiba",
-        "street": "Rua das Flores",
-        "number": "500",
-        "reference": "Centro"
-      }
-    },
-    {
-      "id": "550e8400-e29b-41d4-a716-446655440004",
-      "name": "Madeireira Florestal",
-      "description": "Fornecimento de madeira de reflorestamento e produtos derivados.",
-      "contacts": [
-        {
-          "name": "Marcos Oliveira",
-          "phone": "(51) 93456-7890"
-        },
-        {
-          "name": "Ana Paula",
-          "phone": "(51) 91234-5678"
-        },
-        {
-          "name": "Fernanda Lima",
-          "phone": "(11) 96789-0123"
-        },
-        {
-          "name": "Ricardo Gomes",
-          "phone": "(11) 97890-1234"
-        },
-        {
-          "name": "Juliana Santos",
-          "phone": "(11) 98901-2345"
-        }
-      ],
-      "address": {
-        "zipCode": "90010-001",
-        "state": "RS",
-        "city": "Porto Alegre",
-        "street": "Avenida Borges de Medeiros",
-        "number": "1500",
-        "reference": "Centro Histórico"
-      }
-    },
-    {
-      "id": "550e8400-e29b-41d4-a716-446655440006",
-      "name": "Vidraçaria Transparente",
-      "description": "Especializada em vidros temperados e laminados para construção.",
-      "contacts": [
-        {
-          "name": "Ricardo Gomes",
-          "phone": "(71) 95678-9012"
-        },
-        {
-          "name": "Fernanda Lima",
-          "phone": "(71) 94567-8901"
-        },
-        {
-          "name": "Felipe Castro",
-          "phone": "(11) 91234-5678"
-        },
-        {
-          "name": "Larissa Martins",
-          "phone": "(11) 92345-6789"
-        },
-        {
-          "name": "Roberto Silva",
-          "phone": "(11) 93456-7890"
-        }
-      ],
-      "address": {
-        "zipCode": "40026-010",
-        "state": "BA",
-        "city": "Salvador",
-        "street": "Avenida Sete de Setembro",
-        "number": "100",
-        "reference": "Comércio"
-      }
-    },
-    {
-      "id": "550e8400-e29b-41d4-a716-446655440008",
-      "name": "Iluminação Moderna",
-      "description": "Fornecedor de luminárias e sistemas de iluminação LED.",
-      "contacts": [
-        {
-          "name": "Felipe Castro",
-          "phone": "(48) 97890-1234"
-        },
-        {
-          "name": "Patrícia Almeida",
-          "phone": "(48) 96543-2109"
-        },
-        {
-          "name": "Rodrigo Alves",
-          "phone": "(11) 96789-0123"
-        },
-        {
-          "name": "Carla Ribeiro",
-          "phone": "(11) 97890-1234"
-        },
-        {
-          "name": "Vanessa Lima",
-          "phone": "(11) 98901-2345"
-        }
-      ],
-      "address": {
-        "zipCode": "88010-400",
-        "state": "SC",
-        "city": "Florianópolis",
-        "street": "Rua Felipe Schmidt",
-        "number": "200",
-        "reference": "Centro"
-      }
-    },
-    {
-      "id": "550e8400-e29b-41d4-a716-446655440009",
-      "name": "Pisos & Revestimentos",
-      "description": "Fornecimento de pisos cerâmicos, porcelanatos e revestimentos.",
-      "contacts": [
-        {
-          "name": "Larissa Martins",
-          "phone": "(62) 98901-2345"
-        },
-        {
-          "name": "Roberto Silva",
-          "phone": "(62) 97654-3210"
-        },
-        {
-          "name": "Lucas Mendes",
-          "phone": "(11) 91234-5678"
-        },
-        {
-          "name": "Isabela Fernandes",
-          "phone": "(11) 92345-6789"
-        },
-        {
-          "name": "Rafael Oliveira",
-          "phone": "(11) 93456-7890"
-        }
-      ],
-      "address": {
-        "zipCode": "74015-090",
-        "state": "GO",
-        "city": "Goiânia",
-        "street": "Avenida Goiás",
-        "number": "1000",
-        "reference": "Setor Central"
-      }
-    },
-    {
-      "id": "550e8400-e29b-41d4-a716-446655440010",
-      "name": "Tubos & Conexões",
-      "description": "Fornecimento de tubos e conexões para sistemas hidráulicos.",
-      "contacts": [
-        {
-          "name": "Gustavo Henrique",
-          "phone": "(98) 99012-3456"
-        },
-        {
-          "name": "Mariana Costa",
-          "phone": "(98) 98765-4321"
-        },
-        {
-          "name": "Thiago Almeida",
-          "phone": "(11) 96789-0123"
-        },
-        {
-          "name": "Carolina Lima",
-          "phone": "(11) 97890-1234"
-        },
-        {
-          "name": "Daniel Souza",
-          "phone": "(11) 98901-2345"
-        }
-      ],
-      "address": {
-        "zipCode": "65010-100",
-        "state": "MA",
-        "city": "São Luís",
-        "street": "Rua Grande",
-        "number": "150",
-        "reference": "Centro Histórico"
-      }
-    },
-    {
-      "id": "550e8400-e29b-41d4-a716-446655440012",
-      "name": "Portas & Janelas",
-      "description": "Fornecimento de portas, janelas e esquadrias de alumínio.",
-      "contacts": [
-        {
-          "name": "Rodrigo Alves",
-          "phone": "(84) 99234-5678"
-        },
-        {
-          "name": "Carla Ribeiro",
-          "phone": "(84) 98123-4567"
-        },
-        {
-          "name": "Laura Fernandes",
-          "phone": "(11) 91234-5678"
-        },
-        {
-          "name": "Marcelo Costa",
-          "phone": "(11) 92345-6789"
-        },
-        {
-          "name": "Tatiane Rocha",
-          "phone": "(11) 93456-7890"
-        }
-      ],
-      "address": {
-        "zipCode": "59015-350",
-        "state": "RN",
-        "city": "Natal",
-        "street": "Avenida Hermes da Fonseca",
-        "number": "1000",
-        "reference": "Tirol"
-      }
-    },
-    {
-      "id": "550e8400-e29b-41d4-a716-446655440013",
-      "name": "Telhas & Cia",
-      "description": "Fornecimento de telhas cerâmicas e metálicas.",
-      "contacts": [
-        {
-          "name": "Vanessa Lima",
-          "phone": "(68) 99345-6789"
-        },
-        {
-          "name": "Diego Souza",
-          "phone": "(68) 98234-5678"
-        },
-        {
-          "name": "Eduardo Souza",
-          "phone": "(11) 96789-0123"
-        },
-        {
-          "name": "Vanessa Oliveira",
-          "phone": "(11) 97890-1234"
-        },
-        {
-          "name": "Paulo Mendes",
-          "phone": "(11) 98901-2345"
-        }
-      ],
-      "address": {
-        "zipCode": "69900-128",
-        "state": "AC",
-        "city": "Rio Branco",
-        "street": "Rua Benjamin Constant",
-        "number": "200",
-        "reference": "Centro"
-      }
-    },
-    {
-      "id": "550e8400-e29b-41d4-a716-446655440015",
-      "name": "Toldos & Persianas",
-      "description": "Fornecimento de toldos e persianas para ambientes residenciais e comerciais.",
-      "contacts": [
-        {
-          "name": "Camila Rocha",
-          "phone": "(95) 99567-8901"
-        },
-        {
-          "name": "Lucas Mendes",
-          "phone": "(95) 98456-7890"
-        },
-        {
-          "name": "Sandra Rocha",
-          "phone": "(11) 91234-5678"
-        },
-        {
-          "name": "André Almeida",
-          "phone": "(11) 92345-6789"
-        },
-        {
-          "name": "Cláudia Lima",
-          "phone": "(11) 93456-7890"
-        }
-      ],
-      "address": {
-        "zipCode": "69301-380",
-        "state": "RR",
-        "city": "Boa Vista",
-        "street": "Avenida Ville Roy",
-        "number": "400",
-        "reference": "Centro"
-      }
-    },
-    {
-      "id": "550e8400-e29b-41d4-a716-446655440019",
-      "name": "Plásticos Industriais",
-      "description": "Fornecimento de plásticos para indústria e construção civil.",
-      "contacts": [
-        {
-          "name": "Isabela Fernandes",
-          "phone": "(67) 99901-2345"
-        },
-        {
-          "name": "Rafael Oliveira",
-          "phone": "(67) 98765-4321"
-        },
-        {
-          "name": "Fábio Mendes",
-          "phone": "(11) 96789-0123"
-        },
-        {
-          "name": "Patrícia Fernandes",
-          "phone": "(11) 97890-1234"
-        },
-        {
-          "name": "Ricardo Costa",
-          "phone": "(11) 98901-2345"
-        }
-      ],
-      "address": {
-        "zipCode": "79002-141",
-        "state": "MS",
-        "city": "Campo Grande",
-        "street": "Rua 14 de Julho",
-        "number": "800",
-        "reference": "Centro"
-      }
-    }
-  ]
+	"suppliers": [
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440003",
+			"name": "Tintas & Cores",
+			"description": "Fornecedor de tintas para construção civil e industrial.",
+			"contacts": [
+				{
+					"name": "Juliana Santos",
+					"phone": "(41) 92345-6789"
+				},
+				{
+					"name": "Carlos Mendes",
+					"phone": "(41) 98765-4321"
+				},
+				{
+					"name": "João Silva",
+					"phone": "(11) 91234-5678"
+				},
+				{
+					"name": "Maria Oliveira",
+					"phone": "(11) 92345-6789"
+				},
+				{
+					"name": "Pedro Souza",
+					"phone": "(11) 93456-7890"
+				}
+			],
+			"address": {
+				"zipCode": "80010-010",
+				"state": "PR",
+				"city": "Curitiba",
+				"street": "Rua das Flores",
+				"number": "500",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440004",
+			"name": "Madeireira Florestal",
+			"description": "Fornecimento de madeira de reflorestamento e produtos derivados.",
+			"contacts": [
+				{
+					"name": "Marcos Oliveira",
+					"phone": "(51) 93456-7890"
+				},
+				{
+					"name": "Ana Paula",
+					"phone": "(51) 91234-5678"
+				},
+				{
+					"name": "Fernanda Lima",
+					"phone": "(11) 96789-0123"
+				},
+				{
+					"name": "Ricardo Gomes",
+					"phone": "(11) 97890-1234"
+				},
+				{
+					"name": "Juliana Santos",
+					"phone": "(11) 98901-2345"
+				}
+			],
+			"address": {
+				"zipCode": "90010-001",
+				"state": "RS",
+				"city": "Porto Alegre",
+				"street": "Avenida Borges de Medeiros",
+				"number": "1500",
+				"reference": "Centro Histórico"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440006",
+			"name": "Vidraçaria Transparente",
+			"description": "Especializada em vidros temperados e laminados para construção.",
+			"contacts": [
+				{
+					"name": "Ricardo Gomes",
+					"phone": "(71) 95678-9012"
+				},
+				{
+					"name": "Fernanda Lima",
+					"phone": "(71) 94567-8901"
+				},
+				{
+					"name": "Felipe Castro",
+					"phone": "(11) 91234-5678"
+				},
+				{
+					"name": "Larissa Martins",
+					"phone": "(11) 92345-6789"
+				},
+				{
+					"name": "Roberto Silva",
+					"phone": "(11) 93456-7890"
+				}
+			],
+			"address": {
+				"zipCode": "40026-010",
+				"state": "BA",
+				"city": "Salvador",
+				"street": "Avenida Sete de Setembro",
+				"number": "100",
+				"reference": "Comércio"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440008",
+			"name": "Iluminação Moderna",
+			"description": "Fornecedor de luminárias e sistemas de iluminação LED.",
+			"contacts": [
+				{
+					"name": "Felipe Castro",
+					"phone": "(48) 97890-1234"
+				},
+				{
+					"name": "Patrícia Almeida",
+					"phone": "(48) 96543-2109"
+				},
+				{
+					"name": "Rodrigo Alves",
+					"phone": "(11) 96789-0123"
+				},
+				{
+					"name": "Carla Ribeiro",
+					"phone": "(11) 97890-1234"
+				},
+				{
+					"name": "Vanessa Lima",
+					"phone": "(11) 98901-2345"
+				}
+			],
+			"address": {
+				"zipCode": "88010-400",
+				"state": "SC",
+				"city": "Florianópolis",
+				"street": "Rua Felipe Schmidt",
+				"number": "200",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440009",
+			"name": "Pisos & Revestimentos",
+			"description": "Fornecimento de pisos cerâmicos, porcelanatos e revestimentos.",
+			"contacts": [
+				{
+					"name": "Larissa Martins",
+					"phone": "(62) 98901-2345"
+				},
+				{
+					"name": "Roberto Silva",
+					"phone": "(62) 97654-3210"
+				},
+				{
+					"name": "Lucas Mendes",
+					"phone": "(11) 91234-5678"
+				},
+				{
+					"name": "Isabela Fernandes",
+					"phone": "(11) 92345-6789"
+				},
+				{
+					"name": "Rafael Oliveira",
+					"phone": "(11) 93456-7890"
+				}
+			],
+			"address": {
+				"zipCode": "74015-090",
+				"state": "GO",
+				"city": "Goiânia",
+				"street": "Avenida Goiás",
+				"number": "1000",
+				"reference": "Setor Central"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440010",
+			"name": "Tubos & Conexões",
+			"description": "Fornecimento de tubos e conexões para sistemas hidráulicos.",
+			"contacts": [
+				{
+					"name": "Gustavo Henrique",
+					"phone": "(98) 99012-3456"
+				},
+				{
+					"name": "Mariana Costa",
+					"phone": "(98) 98765-4321"
+				},
+				{
+					"name": "Thiago Almeida",
+					"phone": "(11) 96789-0123"
+				},
+				{
+					"name": "Carolina Lima",
+					"phone": "(11) 97890-1234"
+				},
+				{
+					"name": "Daniel Souza",
+					"phone": "(11) 98901-2345"
+				}
+			],
+			"address": {
+				"zipCode": "65010-100",
+				"state": "MA",
+				"city": "São Luís",
+				"street": "Rua Grande",
+				"number": "150",
+				"reference": "Centro Histórico"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440012",
+			"name": "Portas & Janelas",
+			"description": "Fornecimento de portas, janelas e esquadrias de alumínio.",
+			"contacts": [
+				{
+					"name": "Rodrigo Alves",
+					"phone": "(84) 99234-5678"
+				},
+				{
+					"name": "Carla Ribeiro",
+					"phone": "(84) 98123-4567"
+				},
+				{
+					"name": "Laura Fernandes",
+					"phone": "(11) 91234-5678"
+				},
+				{
+					"name": "Marcelo Costa",
+					"phone": "(11) 92345-6789"
+				},
+				{
+					"name": "Tatiane Rocha",
+					"phone": "(11) 93456-7890"
+				}
+			],
+			"address": {
+				"zipCode": "59015-350",
+				"state": "RN",
+				"city": "Natal",
+				"street": "Avenida Hermes da Fonseca",
+				"number": "1000",
+				"reference": "Tirol"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440013",
+			"name": "Telhas & Cia",
+			"description": "Fornecimento de telhas cerâmicas e metálicas.",
+			"contacts": [
+				{
+					"name": "Vanessa Lima",
+					"phone": "(68) 99345-6789"
+				},
+				{
+					"name": "Diego Souza",
+					"phone": "(68) 98234-5678"
+				},
+				{
+					"name": "Eduardo Souza",
+					"phone": "(11) 96789-0123"
+				},
+				{
+					"name": "Vanessa Oliveira",
+					"phone": "(11) 97890-1234"
+				},
+				{
+					"name": "Paulo Mendes",
+					"phone": "(11) 98901-2345"
+				}
+			],
+			"address": {
+				"zipCode": "69900-128",
+				"state": "AC",
+				"city": "Rio Branco",
+				"street": "Rua Benjamin Constant",
+				"number": "200",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440015",
+			"name": "Toldos & Persianas",
+			"description": "Fornecimento de toldos e persianas para ambientes residenciais e comerciais.",
+			"contacts": [
+				{
+					"name": "Camila Rocha",
+					"phone": "(95) 99567-8901"
+				},
+				{
+					"name": "Lucas Mendes",
+					"phone": "(95) 98456-7890"
+				},
+				{
+					"name": "Sandra Rocha",
+					"phone": "(11) 91234-5678"
+				},
+				{
+					"name": "André Almeida",
+					"phone": "(11) 92345-6789"
+				},
+				{
+					"name": "Cláudia Lima",
+					"phone": "(11) 93456-7890"
+				}
+			],
+			"address": {
+				"zipCode": "69301-380",
+				"state": "RR",
+				"city": "Boa Vista",
+				"street": "Avenida Ville Roy",
+				"number": "400",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440019",
+			"name": "Plásticos Industriais",
+			"description": "Fornecimento de plásticos para indústria e construção civil.",
+			"contacts": [
+				{
+					"name": "Isabela Fernandes",
+					"phone": "(67) 99901-2345"
+				},
+				{
+					"name": "Rafael Oliveira",
+					"phone": "(67) 98765-4321"
+				},
+				{
+					"name": "Fábio Mendes",
+					"phone": "(11) 96789-0123"
+				},
+				{
+					"name": "Patrícia Fernandes",
+					"phone": "(11) 97890-1234"
+				},
+				{
+					"name": "Ricardo Costa",
+					"phone": "(11) 98901-2345"
+				}
+			],
+			"address": {
+				"zipCode": "79002-141",
+				"state": "MS",
+				"city": "Campo Grande",
+				"street": "Rua 14 de Julho",
+				"number": "800",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440020",
+			"name": "Metais São Paulo",
+			"description": "Fornecimento de metais para indústria e construção civil.",
+			"contacts": [
+				{
+					"name": "Carlos Silva",
+					"phone": "(11) 91234-5678"
+				},
+				{
+					"name": "Ana Paula",
+					"phone": "(11) 92345-6789"
+				}
+			],
+			"address": {
+				"zipCode": "01001-000",
+				"state": "SP",
+				"city": "São Paulo",
+				"street": "Avenida Paulista",
+				"number": "1000",
+				"reference": "Próximo ao Metrô Brigadeiro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440021",
+			"name": "Madeiras Nobres",
+			"description": "Fornecimento de madeiras de lei para marcenaria e construção.",
+			"contacts": [
+				{
+					"name": "João Pedro",
+					"phone": "(21) 93456-7890"
+				},
+				{
+					"name": "Mariana Costa",
+					"phone": "(21) 94567-8901"
+				}
+			],
+			"address": {
+				"zipCode": "20040-020",
+				"state": "RJ",
+				"city": "Rio de Janeiro",
+				"street": "Rua do Ouvidor",
+				"number": "50",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440022",
+			"name": "Vidraçaria Moderna",
+			"description": "Fornecimento de vidros temperados e laminados.",
+			"contacts": [
+				{
+					"name": "Fernando Lima",
+					"phone": "(31) 95678-9012"
+				},
+				{
+					"name": "Carla Souza",
+					"phone": "(31) 96789-0123"
+				}
+			],
+			"address": {
+				"zipCode": "30120-010",
+				"state": "MG",
+				"city": "Belo Horizonte",
+				"street": "Rua da Bahia",
+				"number": "1200",
+				"reference": "Próximo à Praça Sete"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440023",
+			"name": "Tintas e Cores",
+			"description": "Fornecimento de tintas para indústria e construção civil.",
+			"contacts": [
+				{
+					"name": "Roberto Almeida",
+					"phone": "(41) 97890-1234"
+				},
+				{
+					"name": "Sandra Nunes",
+					"phone": "(41) 98901-2345"
+				}
+			],
+			"address": {
+				"zipCode": "80010-010",
+				"state": "PR",
+				"city": "Curitiba",
+				"street": "Rua das Flores",
+				"number": "300",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440024",
+			"name": "Ferragens Forte",
+			"description": "Fornecimento de ferragens para construção civil.",
+			"contacts": [
+				{
+					"name": "Luiz Henrique",
+					"phone": "(51) 91234-5678"
+				},
+				{
+					"name": "Tatiana Martins",
+					"phone": "(51) 92345-6789"
+				}
+			],
+			"address": {
+				"zipCode": "90010-000",
+				"state": "RS",
+				"city": "Porto Alegre",
+				"street": "Avenida Borges de Medeiros",
+				"number": "500",
+				"reference": "Centro Histórico"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440025",
+			"name": "Elétrica Brasil",
+			"description": "Fornecimento de materiais elétricos para indústria e construção.",
+			"contacts": [
+				{
+					"name": "Marcos Ribeiro",
+					"phone": "(61) 93456-7890"
+				},
+				{
+					"name": "Juliana Alves",
+					"phone": "(61) 94567-8901"
+				}
+			],
+			"address": {
+				"zipCode": "70002-900",
+				"state": "DF",
+				"city": "Brasília",
+				"street": "Eixo Monumental",
+				"number": "1000",
+				"reference": "Próximo ao Congresso Nacional"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440026",
+			"name": "Cerâmica Arte",
+			"description": "Fornecimento de cerâmicas e porcelanatos.",
+			"contacts": [
+				{
+					"name": "Gustavo Santos",
+					"phone": "(71) 95678-9012"
+				},
+				{
+					"name": "Luciana Oliveira",
+					"phone": "(71) 96789-0123"
+				}
+			],
+			"address": {
+				"zipCode": "40010-000",
+				"state": "BA",
+				"city": "Salvador",
+				"street": "Avenida Sete de Setembro",
+				"number": "200",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440027",
+			"name": "Tecidos e Malhas",
+			"description": "Fornecimento de tecidos e malhas para confecção.",
+			"contacts": [
+				{
+					"name": "Paula Mendes",
+					"phone": "(81) 97890-1234"
+				},
+				{
+					"name": "Ricardo Almeida",
+					"phone": "(81) 98901-2345"
+				}
+			],
+			"address": {
+				"zipCode": "50010-000",
+				"state": "PE",
+				"city": "Recife",
+				"street": "Rua do Bom Jesus",
+				"number": "150",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440028",
+			"name": "Papelaria Premium",
+			"description": "Fornecimento de papéis especiais e embalagens.",
+			"contacts": [
+				{
+					"name": "Sérgio Costa",
+					"phone": "(85) 91234-5678"
+				},
+				{
+					"name": "Fernanda Lima",
+					"phone": "(85) 92345-6789"
+				}
+			],
+			"address": {
+				"zipCode": "60010-000",
+				"state": "CE",
+				"city": "Fortaleza",
+				"street": "Rua Major Facundo",
+				"number": "400",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440029",
+			"name": "Química Avançada",
+			"description": "Fornecimento de produtos químicos para indústria.",
+			"contacts": [
+				{
+					"name": "André Souza",
+					"phone": "(91) 93456-7890"
+				},
+				{
+					"name": "Camila Rocha",
+					"phone": "(91) 94567-8901"
+				}
+			],
+			"address": {
+				"zipCode": "66010-000",
+				"state": "PA",
+				"city": "Belém",
+				"street": "Avenida Presidente Vargas",
+				"number": "600",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440030",
+			"name": "Alumínio e Cia",
+			"description": "Fornecimento de alumínio para construção civil.",
+			"contacts": [
+				{
+					"name": "Rodrigo Mendes",
+					"phone": "(92) 95678-9012"
+				},
+				{
+					"name": "Patrícia Alves",
+					"phone": "(92) 96789-0123"
+				}
+			],
+			"address": {
+				"zipCode": "69005-000",
+				"state": "AM",
+				"city": "Manaus",
+				"street": "Avenida Eduardo Ribeiro",
+				"number": "700",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440031",
+			"name": "Cimentos Fortaleza",
+			"description": "Fornecimento de cimentos e argamassas.",
+			"contacts": [
+				{
+					"name": "Felipe Costa",
+					"phone": "(84) 97890-1234"
+				},
+				{
+					"name": "Larissa Silva",
+					"phone": "(84) 98901-2345"
+				}
+			],
+			"address": {
+				"zipCode": "59010-000",
+				"state": "RN",
+				"city": "Natal",
+				"street": "Rua João Pessoa",
+				"number": "800",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440032",
+			"name": "Tubos e Conexões",
+			"description": "Fornecimento de tubos e conexões para construção civil.",
+			"contacts": [
+				{
+					"name": "Bruno Oliveira",
+					"phone": "(98) 91234-5678"
+				},
+				{
+					"name": "Vanessa Souza",
+					"phone": "(98) 92345-6789"
+				}
+			],
+			"address": {
+				"zipCode": "65010-000",
+				"state": "MA",
+				"city": "São Luís",
+				"street": "Rua Grande",
+				"number": "900",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440033",
+			"name": "Isolantes Térmicos",
+			"description": "Fornecimento de materiais isolantes térmicos.",
+			"contacts": [
+				{
+					"name": "Diego Almeida",
+					"phone": "(68) 93456-7890"
+				},
+				{
+					"name": "Renata Costa",
+					"phone": "(68) 94567-8901"
+				}
+			],
+			"address": {
+				"zipCode": "69900-000",
+				"state": "AC",
+				"city": "Rio Branco",
+				"street": "Rua Epaminondas Jácome",
+				"number": "1000",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440034",
+			"name": "Tecnologia em Aço",
+			"description": "Fornecimento de aço para construção e indústria.",
+			"contacts": [
+				{
+					"name": "Marcelo Fernandes",
+					"phone": "(96) 95678-9012"
+				},
+				{
+					"name": "Cristina Oliveira",
+					"phone": "(96) 96789-0123"
+				}
+			],
+			"address": {
+				"zipCode": "68900-000",
+				"state": "AP",
+				"city": "Macapá",
+				"street": "Avenida FAB",
+				"number": "1100",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440035",
+			"name": "Pedras Decorativas",
+			"description": "Fornecimento de pedras para decoração e construção.",
+			"contacts": [
+				{
+					"name": "Rogério Mendes",
+					"phone": "(63) 97890-1234"
+				},
+				{
+					"name": "Isabela Costa",
+					"phone": "(63) 98901-2345"
+				}
+			],
+			"address": {
+				"zipCode": "77001-000",
+				"state": "TO",
+				"city": "Palmas",
+				"street": "Avenida JK",
+				"number": "1200",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440036",
+			"name": "Tintas Especiais",
+			"description": "Fornecimento de tintas especiais para indústria.",
+			"contacts": [
+				{
+					"name": "Lucas Silva",
+					"phone": "(62) 91234-5678"
+				},
+				{
+					"name": "Amanda Rocha",
+					"phone": "(62) 92345-6789"
+				}
+			],
+			"address": {
+				"zipCode": "74001-000",
+				"state": "GO",
+				"city": "Goiânia",
+				"street": "Avenida Goiás",
+				"number": "1300",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440037",
+			"name": "Vidros e Espelhos",
+			"description": "Fornecimento de vidros e espelhos para construção.",
+			"contacts": [
+				{
+					"name": "Gabriel Alves",
+					"phone": "(65) 93456-7890"
+				},
+				{
+					"name": "Carolina Souza",
+					"phone": "(65) 94567-8901"
+				}
+			],
+			"address": {
+				"zipCode": "78005-000",
+				"state": "MT",
+				"city": "Cuiabá",
+				"street": "Rua Galdino Pimentel",
+				"number": "1400",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440038",
+			"name": "Materiais de Construção",
+			"description": "Fornecimento de materiais de construção em geral.",
+			"contacts": [
+				{
+					"name": "Thiago Costa",
+					"phone": "(66) 95678-9012"
+				},
+				{
+					"name": "Bianca Oliveira",
+					"phone": "(66) 96789-0123"
+				}
+			],
+			"address": {
+				"zipCode": "78700-000",
+				"state": "MT",
+				"city": "Rondonópolis",
+				"street": "Avenida Presidente Médici",
+				"number": "1500",
+				"reference": "Centro"
+			}
+		},
+		{
+			"id": "550e8400-e29b-41d4-a716-446655440039",
+			"name": "Tecnologia em Concreto",
+			"description": "Fornecimento de concreto usinado e pré-moldados.",
+			"contacts": [
+				{
+					"name": "Eduardo Mendes",
+					"phone": "(67) 97890-1234"
+				},
+				{
+					"name": "Marina Silva",
+					"phone": "(67) 98901-2345"
+				}
+			],
+			"address": {
+				"zipCode": "79002-141",
+				"state": "MS",
+				"city": "Campo Grande",
+				"street": "Rua 14 de Julho",
+				"number": "1600",
+				"reference": "Centro"
+			}
+		}
+	]
 }

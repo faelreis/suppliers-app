@@ -15,6 +15,10 @@ export const metadata: Metadata = {
 	title: "SuppliersApp - Reis",
 	description:
 		"Aplicativo desenvolvido para facilitar o gerenciamento de fornecedores, com funcionalidades para controle de informações, contratos e comunicações, gerado pelo Create Next App.",
+
+	icons: {
+		icon: "/icon.ico",
+	},
 };
 
 export default function RootLayout({
