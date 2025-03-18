@@ -1,5 +1,5 @@
 import { flex } from "@/styles/mixins";
-import { Text16Regular } from "@/styles/patterns";
+import { Text14Regular, Text16Regular } from "@/styles/patterns";
 import variables from "@/styles/variables";
 import styled from "styled-components";
 
@@ -117,6 +117,7 @@ export const Table = styled.table`
 			border: 1px solid #ddd;
 			border-radius: 4px;
 			width: 100%;
+			padding: 0.8rem;
 		}
 
 		td {
@@ -147,9 +148,6 @@ export const Actions = styled.div`
 export const EmptyText = styled.span`
 	display: block;
 	margin-bottom: 1.6rem;
-	background-color: ${variables.colors.gray[1]};
-	padding: 1rem;
-	text-align: center;
 `;
 
 export const Row = styled.div`
@@ -157,5 +155,15 @@ export const Row = styled.div`
 
 	@media(max-width: 768px) {
 		width: 100%;
+	}
+`;
+
+export const HeadingCell = styled.span`
+	${Text14Regular}
+	color: ${variables.colors.gray[1]};
+	display: block;
+
+	@media (min-width: 768px) {
+		display: none;
 	}
 `;

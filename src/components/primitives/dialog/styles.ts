@@ -51,6 +51,10 @@ export const StyledContent = styled(RadixDialog.Content)`
 			transform: translate(-50%, -50%) scale(1);
 		}
 	}
+
+	@media (max-width: 768px) {
+		padding: 1.2rem;
+	}
 `;
 
 export const StyledTitle = styled(RadixDialog.Title)`

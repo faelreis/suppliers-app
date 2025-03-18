@@ -56,7 +56,7 @@ AlertDialog.Trigger = function Trigger({
 };
 
 AlertDialog.Overlay = function Overlay() {
-	return <S.Overlay />;
+	return <S.StyledOverlay />;
 };
 
 AlertDialog.Content = function Content({
@@ -67,7 +67,7 @@ AlertDialog.Content = function Content({
 	return (
 		<AlertDialogPortal>
 			<AlertDialog.Overlay />
-			<S.Content>{children}</S.Content>
+			<S.StyledContent>{children}</S.StyledContent>
 		</AlertDialogPortal>
 	);
 };
@@ -77,7 +77,7 @@ AlertDialog.Title = function Title({
 }: {
 	children: React.ReactNode;
 }) {
-	return <S.Title>{children}</S.Title>;
+	return <S.StyledTitle>{children}</S.StyledTitle>;
 };
 
 AlertDialog.Description = function Description({
@@ -85,7 +85,7 @@ AlertDialog.Description = function Description({
 }: {
 	children: React.ReactNode;
 }) {
-	return <S.Description>{children}</S.Description>;
+	return <S.StyledDescription>{children}</S.StyledDescription>;
 };
 
 AlertDialog.Cancel = function Cancel({
@@ -94,7 +94,7 @@ AlertDialog.Cancel = function Cancel({
 }: {
 	children: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
-	return <S.Cancel {...props}>{children}</S.Cancel>;
+	return <S.StyledCancel {...props}>{children}</S.StyledCancel>;
 };
 
 AlertDialog.Action = function Action({
@@ -103,5 +103,5 @@ AlertDialog.Action = function Action({
 }: {
 	children: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
-	return <S.Action {...props}>{children}</S.Action>;
+	return <S.StyledAction {...props}>{children}</S.StyledAction>;
 };

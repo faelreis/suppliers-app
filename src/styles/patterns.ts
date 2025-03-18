@@ -245,6 +245,14 @@ export const FieldsetWrapTemplate = css`
 	&.withicon {
 		${flex("row", "flex-start", "flex-start", "1.6rem")}
 	}
+
+	@media (max-width: 768px) {
+		grid-template-columns: repeat(1, 1fr);
+
+		&.withicon {
+			flex-direction: column;
+		}
+	}
 `;
 
 export const FormTemplate = css`
@@ -288,6 +296,10 @@ export const ErrorMessageTemplate = css`
 export const ButtonsWrapTemplate = css`
 	margin-top: 1.6rem;
 	${flex("row", "flex-start", "center", "0.8rem")}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 `;
 
 export const SubtitleTemplate = css`

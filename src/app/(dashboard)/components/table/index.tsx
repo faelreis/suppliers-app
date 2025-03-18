@@ -33,6 +33,7 @@ import {
 } from "@/components/primitives/tooltip";
 import { Pagination } from "@/components/commons/pagination";
 import { usePagination } from "@/hooks/use-pagination";
+import { SkeletonTable } from "@/components/skeleton-table";
 
 const SupplierList = () => {
 	const {
@@ -71,12 +72,10 @@ const SupplierList = () => {
 		10
 	);
 
-	if (isLoading) return <div>Carregando...</div>;
-	if (isError) return <div>Erro ao carregar fornecedores</div>;
-
 	return (
 		<S.SupplierArea>
 			<Container>
+				{isError && <p>Erro ao carregar fornecedores</p>}
 				<S.TableHeader>
 					<S.TableHeaderFilters>
 						<S.TableHeaderSearchForm
@@ -100,31 +99,6 @@ const SupplierList = () => {
 						</S.TableHeaderSearchForm>
 
 						<S.Row>
-							{/* <Dialog
-								open={openAddSupplier}
-								onOpenChange={setOpenAddSupplier}
-							>
-								<Dialog.Trigger asChild>
-									<Button variant="outline" asChild>
-										<Filter size={20} />
-										Filtrar
-									</Button>
-								</Dialog.Trigger>
-								<Dialog.Overlay />
-								<Dialog.Content>
-									<Dialog.Title>
-										Filtro de fornecedores
-									</Dialog.Title>
-									<Dialog.Description>
-										Faça a filtragem necessária para
-										encontrar os fornecedores desejados.
-									</Dialog.Description>
-									<Dialog.Close />
-									<AddSupplierDialog
-										setOpen={setOpenAddSupplier}
-									/>
-								</Dialog.Content>
-							</Dialog> */}
 							<Tooltip>
 								<TooltipTrigger asChild>
 									<Button
@@ -163,7 +137,6 @@ const SupplierList = () => {
 						</Dialog.Content>
 					</Dialog.Root>
 				</S.TableHeader>
-
 				<S.Table>
 					<thead>
 						<tr>
@@ -175,6 +148,10 @@ const SupplierList = () => {
 						</tr>
 					</thead>
 					<tbody>
+						{isLoading &&
+							Array.from({ length: 5 }).map((_, index) => (
+								<SkeletonTable key={index} />
+							))}
 						{!isEmptySuppliers ? (
 							currentItems?.map((supplier) => (
 								<tr
@@ -182,16 +159,26 @@ const SupplierList = () => {
 									id={`item-${supplier.id}`}
 								>
 									<td>
+										<S.HeadingCell>Nome</S.HeadingCell>
 										{truncateText(supplier.name, 25) || "-"}
 									</td>
 									<td>
+										<S.HeadingCell>Descrição</S.HeadingCell>
 										{truncateText(
 											supplier.description,
 											30
 										) || "-"}
 									</td>
-									<td>{supplier.address.state}</td>
-									<td>{supplier?.address?.city || "-"}</td>
+
+									<td>
+										<S.HeadingCell>Estado</S.HeadingCell>
+										{supplier.address.state}
+									</td>
+
+									<td>
+										<S.HeadingCell>Cidade</S.HeadingCell>
+										{supplier?.address?.city || "-"}
+									</td>
 									<td>
 										<S.Actions>
 											<Dialog.Root>
@@ -275,99 +262,15 @@ const SupplierList = () => {
 												</AlertDialog.Content>
 											</AlertDialog>
 										</S.Actions>
-										{/* <S.Actions>
-											<Dialog>
-												<Dialog.Trigger asChild>
-													<Button
-														variant="outline"
-														size="icon"
-														onClick={() => {
-															setSelectedSupplier(
-																supplier
-															);
-														}}
-													>
-														<Eye size={18} />
-													</Button>
-												</Dialog.Trigger>
-												<Dialog.Overlay />
-												<Dialog.Content>
-													<Dialog.Close />
-													<Dialog.Title>
-														Visualizar fornecedor
-													</Dialog.Title>
-													<Dialog.Description>
-														Visualize os dados do
-														fornecedor
-													</Dialog.Description>
-													<ViewSupplierDialog />
-												</Dialog.Content>
-											</Dialog>
-											<Dialog>
-												<Dialog.Trigger asChild>
-													<Button
-														variant="success"
-														size="icon"
-														onClick={() => {
-															setSelectedSupplier(
-																supplier
-															);
-														}}
-													>
-														<Edit size={18} />
-													</Button>
-												</Dialog.Trigger>
-												<Dialog.Overlay />
-												<Dialog.Content>
-													<Dialog.Close />
-													<Dialog.Title>
-														Editar Fornecedor
-													</Dialog.Title>
-													<Dialog.Description>
-														Preencha os campos
-														abaixo para atualizar os
-														dados.
-													</Dialog.Description>
-													<EditSupplierDialog />
-												</Dialog.Content>
-											</Dialog>
-
-											<AlertDialog>
-												<AlertDialog.Trigger>
-													<Button
-														size="icon"
-														variant="destructive"
-														onClick={() => {
-															setSelectedSupplier(
-																supplier
-															);
-														}}
-													>
-														<Trash size={18} />
-													</Button>
-												</AlertDialog.Trigger>
-												<AlertDialog.Overlay />
-												<AlertDialog.Content>
-													<AlertDialog.Title>
-														Excluir Fornecedor
-													</AlertDialog.Title>
-													<AlertDialog.Description>
-														Você tem certeza que
-														deseja excluir este
-														fornecedor?
-													</AlertDialog.Description>
-													<DeleteSupplierDialog />
-												</AlertDialog.Content>
-											</AlertDialog>
-										</S.Actions> */}
 									</td>
 								</tr>
 							))
 						) : (
 							<tr>
 								<td colSpan={5}>
-									<p>Nenhum fornecedor encontrado</p>
-									<S.EmptyText></S.EmptyText>
+									<S.EmptyText>
+										Nenhum fornecedor encontrado
+									</S.EmptyText>
 									<Button
 										variant="outline"
 										onClick={handleClearSearch}
@@ -380,11 +283,13 @@ const SupplierList = () => {
 						)}
 					</tbody>
 				</S.Table>
-				<Pagination
-					currentPage={currentPage}
-					totalPages={totalPages}
-					onPageChange={goToPage}
-				/>
+				{filteredSuppliers?.length !== 0 && (
+					<Pagination
+						currentPage={currentPage}
+						totalPages={totalPages}
+						onPageChange={goToPage}
+					/>
+				)}
 			</Container>
 		</S.SupplierArea>
 	);

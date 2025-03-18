@@ -202,6 +202,8 @@ const AddSupplierDialog = ({
 					<S.Input
 						{...register("address.number")}
 						placeholder="Número"
+						inputMode="numeric"
+						type="number"
 					/>
 					{errors?.address?.number && (
 						<S.ErrorMessage>
