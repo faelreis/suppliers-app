@@ -1,6 +1,8 @@
 # SuppliersApp
 
-Suppliers App is a Next.js application designed to manage and interact with suppliers. The app includes features such as data handling through React Query, user interface components using Radix UI, and a mock backend powered by JSON Server.
+Suppliers App is a Next.js application designed to manage and interact with suppliers.
+
+![cover-suppliersapp](https://github.com/user-attachments/assets/d5d381bf-aec8-41c9-b371-eaab8d39efb2)
 
 ## Features
 
@@ -15,7 +17,7 @@ Suppliers App is a Next.js application designed to manage and interact with supp
 
 To get started with the application, follow these steps:
 
-### 1. Install dependencies
+### 1. Install dependencies:
 
 ```bash
 pnpm install
@@ -26,18 +28,12 @@ pnpm install
 To start the development server, use the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### 3. Run the mock server
+### 3. Run the mock server:
 
 In a separate terminal, run the mock server:\
 
@@ -46,6 +42,7 @@ pnpm run server
 ```
 
 This will start a JSON Server instance on [http://localhost:3333](http://localhost:3333), simulating a backend API for your application.
+
 
 ## Available Scripts
 
