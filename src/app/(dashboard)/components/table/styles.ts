@@ -41,9 +41,9 @@ export const TableHeader = styled.div`
 
 export const TableHeaderFilters = styled.div`
 	${flex("row", "center", "flex-start", "1.8rem")}
-	width: 100%;
 
-	@media (max-width: 600px) {
+	@media (max-width: 768px) {
+		width: 100%;
 		${flex("column", "flex-start", "space-between", "1.6rem")}
 	}
 `;
