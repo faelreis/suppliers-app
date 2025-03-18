@@ -22,6 +22,7 @@ export const useQuerySearch = () => {
 	};
 
 	const handleClearSearch = () => {
+		console.log("Removido");
 		setSearchInput("");
 		const params = new URLSearchParams(searchParams);
 		params.delete("search");

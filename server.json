@@ -176,8 +176,7 @@
       }
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440010",
-      "name": "Tubos & Conexões",
+      "name": "Vida & Conexões",
       "description": "Fornecimento de tubos e conexões para sistemas hidráulicos.",
       "contacts": [
         {
@@ -205,10 +204,11 @@
         "zipCode": "65010-100",
         "state": "MA",
         "city": "São Luís",
-        "street": "Rua Grande",
+        "street": "Rua Couto Fernandes",
         "number": "150",
         "reference": "Centro Histórico"
-      }
+      },
+      "id": "550e8400-e29b-41d4-a716-446655440010"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440012",
@@ -397,8 +397,7 @@
       }
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440022",
-      "name": "Vidraçaria Moderna",
+      "name": "Vidraçaria Old",
       "description": "Fornecimento de vidros temperados e laminados.",
       "contacts": [
         {
@@ -414,10 +413,11 @@
         "zipCode": "30120-010",
         "state": "MG",
         "city": "Belo Horizonte",
-        "street": "Rua da Bahia",
+        "street": "Avenida dos Andradas",
         "number": "1200",
         "reference": "Próximo à Praça Sete"
-      }
+      },
+      "id": "550e8400-e29b-41d4-a716-446655440022"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440023",
@@ -581,8 +581,7 @@
       }
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440030",
-      "name": "Alumínio e Cia",
+      "name": "Alumínio CO",
       "description": "Fornecimento de alumínio para construção civil.",
       "contacts": [
         {
@@ -598,10 +597,11 @@
         "zipCode": "69005-000",
         "state": "AM",
         "city": "Manaus",
-        "street": "Avenida Eduardo Ribeiro",
+        "street": "Rua Marechal Deodoro",
         "number": "700",
         "reference": "Centro"
-      }
+      },
+      "id": "550e8400-e29b-41d4-a716-446655440030"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440031",
@@ -720,7 +720,7 @@
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440036",
-      "name": "Tintas Especiais",
+      "name": "Tintas Verdes",
       "description": "Fornecimento de tintas especiais para indústria.",
       "contacts": [
         {

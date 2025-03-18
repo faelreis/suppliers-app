@@ -1,11 +1,5 @@
-import { flex } from "@/styles/mixins";
-import { Text14Regular } from "@/styles/patterns";
 import variables from "@/styles/variables";
 import styled from "styled-components";
-
-export const SupplierArea = styled.section`
-	padding: 3.2rem 0 6rem 0;
-`;
 
 export const Table = styled.table`
 	width: 100%;
@@ -74,13 +68,5 @@ export const Table = styled.table`
 		button {
 			width: 100%;
 		}
-	}
-`;
-
-export const Row = styled.div`
-	${flex("row", "center", "space-between", "1.6rem")}
-
-	@media(max-width: 768px) {
-		width: 100%;
 	}
 `;

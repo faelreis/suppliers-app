@@ -10,7 +10,7 @@ export const Content = S.StyledContent;
 export const Title = S.StyledTitle;
 export const Description = S.StyledDescription;
 
-export const Close = ({ children = <X size={18} />, ...props }) => (
+export const Close = ({ children = <X size={20} />, ...props }) => (
 	<S.StyledClose {...props}>{children}</S.StyledClose>
 );
 

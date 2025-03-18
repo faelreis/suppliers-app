@@ -69,6 +69,7 @@ export const StyledDescription = styled(RadixDialog.Description)`
 `;
 
 export const StyledClose = styled(RadixDialog.Close)`
+	width: fit-content !important;
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -83,21 +84,4 @@ export const StyledClose = styled(RadixDialog.Close)`
 	}
 `;
 
-export const StyledTrigger = styled(RadixDialog.Trigger)`
-	padding: 8px 16px;
-	background-color: #007bff;
-	color: white;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	transition: background-color 0.2s;
-	font-size: 0.875rem;
-
-	&:hover {
-		background-color: #0056b3;
-	}
-
-	&:focus {
-		outline: 2px solid #90caf9;
-	}
-`;
+export const StyledTrigger = styled(RadixDialog.Trigger)``;

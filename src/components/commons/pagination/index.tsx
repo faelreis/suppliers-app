@@ -18,7 +18,7 @@ export const Pagination = ({
 
 		pages.push(1);
 
-		if (currentPage > 3) {
+		if (currentPage > 2) {
 			pages.push("...");
 		}
 
