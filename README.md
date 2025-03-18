@@ -1,8 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SuppliersApp
+
+Suppliers App is a Next.js application designed to manage and interact with suppliers. The app includes features such as data handling through React Query, user interface components using Radix UI, and a mock backend powered by JSON Server.
+
+## Features
+
+-   **Form handling**: Utilizes React Hook Form for easy and efficient form management.
+-   **Data fetching**: Uses React Query to handle API requests and state management.
+-   **UI Components**: Radix UI for modal dialogs, tooltips, and alerts.
+-   **State management**: Zustand for managing global state in a simple and scalable way.
+-   **Validation**: Zod for schema validation on form inputs.
+-   **API mocking**: JSON Server for a mock backend to simulate API interactions.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the application, follow these steps:
+
+### 1. Install dependencies
+
+```bash
+pnpm install
+```
+
+### 2. Run the development server:
+
+To start the development server, use the following command:
 
 ```bash
 npm run dev
@@ -16,21 +37,30 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run the mock server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+In a separate terminal, run the mock server:\
 
-## Learn More
+```bash
+pnpm run server
+```
 
-To learn more about Next.js, take a look at the following resources:
+This will start a JSON Server instance on [http://localhost:3333](http://localhost:3333), simulating a backend API for your application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-   `pnpm run dev`: Starts the Next.js development server.
+-   `pnpm run build`: Builds the Next.js app for production.
+-   `pnpm run start`: Starts the Next.js app in production mode.
+-   `pnpm run lint`: Runs the linter on the project.
+-   `pnpm run server`: Starts the JSON Server instance on port 3333.
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can deploy your Next.js app on Vercel with ease. Just follow the steps in the Next.js deployment documentation.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For more details about Vercel, visit [vercel.com](https://vercel.com).
+
+## Developed By
+
+This project was developed by **Rafael Reis Franco**.

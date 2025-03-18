@@ -7,7 +7,6 @@ import {
 	Download,
 	Edit,
 	Eye,
-	Filter,
 	Search,
 	SearchX,
 	Trash,
