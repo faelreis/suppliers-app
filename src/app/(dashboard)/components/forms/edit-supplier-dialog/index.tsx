@@ -39,11 +39,10 @@ const EditSupplierDialog = () => {
 						reset(updatedData);
 						toast.success("Fornecedor atualizado com sucesso!");
 					},
-					onError: (error) => {
+					onError: () => {
 						toast.error(
 							"Erro ao atualizar fornecedor. Tente novamente."
 						);
-						console.error("Erro ao atualizar fornecedor:", error);
 					},
 				}
 			);

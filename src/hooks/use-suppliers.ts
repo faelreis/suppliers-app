@@ -2,6 +2,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { SupplierService } from "@/api/supplier-service";
 import { SupplierFormData } from "@/@types/supplier";
 import { ufToStateName } from "@/utils/index";
+import { toast } from "sonner";
 
 export const useSuppliers = () => {
 	return useQuery({
@@ -54,6 +55,10 @@ export const useDeleteSupplier = () => {
 		mutationFn: (id: string) => SupplierService.delete(id),
 		onSuccess: () => {
 			queryClient.invalidateQueries({ queryKey: ["suppliers"] });
+			toast.success("Fornecedor removido com sucesso!");
+		},
+		onError: () => {
+			toast.error("Erro ao remover fornecedor.");
 		},
 	});
 };

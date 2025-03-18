@@ -9,6 +9,7 @@ import { House, Phone, User } from "lucide-react";
 import { Icon } from "@/components/commons/icon";
 import { formatZipCode, getFirstName, sanitizePhoneNumber } from "@/utils";
 import { DialogClose } from "@radix-ui/react-dialog";
+import { GoogleMaps } from "@/components/google-maps";
 
 const ViewSupplierDialog = () => {
 	const { selectedSupplier } = useSupplierStore();
@@ -116,6 +117,14 @@ const ViewSupplierDialog = () => {
 			</S.Grid>
 
 			<S.Spacing />
+
+			<GoogleMaps
+				city={selectedSupplier?.address.city || ""}
+				number={selectedSupplier?.address.number || ""}
+				state={selectedSupplier?.address.state || ""}
+				street={selectedSupplier?.address.street || ""}
+				zipCode={selectedSupplier?.address.zipCode || ""}
+			/>
 
 			<DialogClose asChild>
 				<Button type="submit" fullWidth variant="outline">

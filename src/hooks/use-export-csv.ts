@@ -1,4 +1,5 @@
 import { useCallback } from "react";
+import { toast } from "sonner";
 
 type UseExportCsvReturn = {
 	exportToCsv: () => void;
@@ -10,7 +11,7 @@ export const useExportCsv = <T extends Record<string, unknown>>(
 ): UseExportCsvReturn => {
 	const exportToCsv = useCallback(() => {
 		if (!data || data.length === 0) {
-			console.error("Nenhum dado fornecido para exportar.");
+			toast.error("Nenhum dado fornecido para exportar.");
 			return;
 		}
 

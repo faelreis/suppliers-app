@@ -18,16 +18,7 @@ const DeleteSupplierDialog = () => {
 			return;
 		}
 
-		deleteMutation.mutate(selectedSupplier.id, {
-			onSuccess: (data) => {
-				console.log("Fornecedor removido:", data);
-				toast.success("Fornecedor removido com sucesso!");
-			},
-			onError: (error) => {
-				console.error("Erro ao remover fornecedor:", error);
-				toast.error(`Erro ao remover fornecedor: ${error.message}`);
-			},
-		});
+		deleteMutation.mutate(selectedSupplier.id);
 	};
 
 	return (

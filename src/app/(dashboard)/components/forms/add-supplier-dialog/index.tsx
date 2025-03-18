@@ -37,9 +37,8 @@ const AddSupplierDialog = ({
 				setOpen(false);
 				reset();
 			},
-			onError: (error) => {
+			onError: () => {
 				toast.error("Erro ao criar fornecedor. Tente novamente.");
-				console.error("Erro ao criar fornecedor:", error);
 			},
 		});
 	};
